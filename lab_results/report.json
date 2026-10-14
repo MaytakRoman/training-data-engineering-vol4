@@ -1,0 +1,1154 @@
+{
+  "design": {
+    "seeds": [
+      17,
+      29,
+      43,
+      71,
+      101
+    ],
+    "test_per_class": 120,
+    "train_families_per_class": 400,
+    "model": "multinomial NB alpha=1",
+    "synthetic": true
+  },
+  "runs": [
+    {
+      "accuracy": 0.09666666666666666,
+      "macro_f1": 0.09665772587105852,
+      "recall": {
+        "pump": 0.10833333333333334,
+        "motor": 0.075,
+        "valve": 0.1,
+        "sensor": 0.10833333333333334,
+        "bearing": 0.09166666666666666
+      },
+      "matrix": {
+        "pump": {
+          "bearing": 91,
+          "pump": 13,
+          "valve": 6,
+          "motor": 6,
+          "sensor": 4
+        },
+        "motor": {
+          "pump": 92,
+          "motor": 9,
+          "sensor": 9,
+          "valve": 7,
+          "bearing": 3
+        },
+        "valve": {
+          "valve": 12,
+          "motor": 89,
+          "bearing": 7,
+          "sensor": 8,
+          "pump": 4
+        },
+        "sensor": {
+          "valve": 86,
+          "bearing": 4,
+          "motor": 8,
+          "sensor": 13,
+          "pump": 9
+        },
+        "bearing": {
+          "bearing": 11,
+          "sensor": 91,
+          "motor": 10,
+          "valve": 4,
+          "pump": 4
+        }
+      },
+      "seed": 17,
+      "stage": "raw",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 141016,
+      "n_damaged": 758,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7316666666666667,
+      "macro_f1": 0.7317846512509836,
+      "recall": {
+        "pump": 0.7583333333333333,
+        "motor": 0.7,
+        "valve": 0.7083333333333334,
+        "sensor": 0.75,
+        "bearing": 0.7416666666666667
+      },
+      "matrix": {
+        "pump": {
+          "pump": 91,
+          "valve": 8,
+          "sensor": 6,
+          "motor": 10,
+          "bearing": 5
+        },
+        "motor": {
+          "motor": 84,
+          "valve": 7,
+          "bearing": 9,
+          "pump": 11,
+          "sensor": 9
+        },
+        "valve": {
+          "sensor": 11,
+          "valve": 85,
+          "motor": 10,
+          "pump": 6,
+          "bearing": 8
+        },
+        "sensor": {
+          "sensor": 90,
+          "pump": 4,
+          "valve": 13,
+          "motor": 9,
+          "bearing": 4
+        },
+        "bearing": {
+          "pump": 8,
+          "bearing": 89,
+          "valve": 10,
+          "sensor": 9,
+          "motor": 4
+        }
+      },
+      "seed": 17,
+      "stage": "extract",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 39576,
+      "n_damaged": 758,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7283333333333334,
+      "macro_f1": 0.7285231376501218,
+      "recall": {
+        "pump": 0.7333333333333333,
+        "motor": 0.7083333333333334,
+        "valve": 0.7083333333333334,
+        "sensor": 0.75,
+        "bearing": 0.7416666666666667
+      },
+      "matrix": {
+        "pump": {
+          "pump": 88,
+          "motor": 12,
+          "bearing": 6,
+          "valve": 8,
+          "sensor": 6
+        },
+        "motor": {
+          "motor": 85,
+          "valve": 7,
+          "bearing": 9,
+          "pump": 10,
+          "sensor": 9
+        },
+        "valve": {
+          "sensor": 11,
+          "valve": 85,
+          "motor": 10,
+          "pump": 6,
+          "bearing": 8
+        },
+        "sensor": {
+          "sensor": 90,
+          "pump": 4,
+          "valve": 13,
+          "motor": 9,
+          "bearing": 4
+        },
+        "bearing": {
+          "pump": 8,
+          "bearing": 89,
+          "valve": 10,
+          "sensor": 9,
+          "motor": 4
+        }
+      },
+      "seed": 17,
+      "stage": "dedup",
+      "n_train": 2000,
+      "n_test": 600,
+      "n_tokens": 31160,
+      "n_damaged": 594,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7333333333333333,
+      "macro_f1": 0.7334311636443354,
+      "recall": {
+        "pump": 0.7416666666666667,
+        "motor": 0.7166666666666667,
+        "valve": 0.7083333333333334,
+        "sensor": 0.7583333333333333,
+        "bearing": 0.7416666666666667
+      },
+      "matrix": {
+        "pump": {
+          "pump": 89,
+          "motor": 12,
+          "valve": 8,
+          "sensor": 6,
+          "bearing": 5
+        },
+        "motor": {
+          "motor": 86,
+          "valve": 6,
+          "bearing": 9,
+          "pump": 10,
+          "sensor": 9
+        },
+        "valve": {
+          "sensor": 11,
+          "valve": 85,
+          "motor": 10,
+          "pump": 6,
+          "bearing": 8
+        },
+        "sensor": {
+          "sensor": 91,
+          "pump": 4,
+          "valve": 11,
+          "motor": 9,
+          "bearing": 5
+        },
+        "bearing": {
+          "pump": 8,
+          "bearing": 89,
+          "valve": 10,
+          "sensor": 9,
+          "motor": 4
+        }
+      },
+      "seed": 17,
+      "stage": "quality",
+      "n_train": 1406,
+      "n_test": 600,
+      "n_tokens": 21993,
+      "n_damaged": 0,
+      "n_families": 1406
+    },
+    {
+      "accuracy": 0.1,
+      "macro_f1": 0.09991245452850285,
+      "recall": {
+        "pump": 0.1,
+        "motor": 0.1,
+        "valve": 0.11666666666666667,
+        "sensor": 0.09166666666666666,
+        "bearing": 0.09166666666666666
+      },
+      "matrix": {
+        "pump": {
+          "bearing": 87,
+          "motor": 9,
+          "sensor": 2,
+          "valve": 10,
+          "pump": 12
+        },
+        "motor": {
+          "pump": 92,
+          "valve": 6,
+          "sensor": 10,
+          "motor": 12
+        },
+        "valve": {
+          "motor": 93,
+          "valve": 14,
+          "bearing": 8,
+          "sensor": 5
+        },
+        "sensor": {
+          "valve": 90,
+          "motor": 4,
+          "pump": 10,
+          "bearing": 5,
+          "sensor": 11
+        },
+        "bearing": {
+          "motor": 9,
+          "sensor": 83,
+          "pump": 13,
+          "bearing": 11,
+          "valve": 4
+        }
+      },
+      "seed": 29,
+      "stage": "raw",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 140494,
+      "n_damaged": 777,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.725,
+      "macro_f1": 0.7249848025802418,
+      "recall": {
+        "pump": 0.725,
+        "motor": 0.7666666666666667,
+        "valve": 0.7333333333333333,
+        "sensor": 0.7083333333333334,
+        "bearing": 0.6916666666666667
+      },
+      "matrix": {
+        "pump": {
+          "bearing": 7,
+          "valve": 10,
+          "pump": 87,
+          "sensor": 10,
+          "motor": 6
+        },
+        "motor": {
+          "motor": 92,
+          "sensor": 6,
+          "bearing": 10,
+          "valve": 6,
+          "pump": 6
+        },
+        "valve": {
+          "valve": 88,
+          "sensor": 14,
+          "motor": 8,
+          "pump": 5,
+          "bearing": 5
+        },
+        "sensor": {
+          "sensor": 85,
+          "valve": 9,
+          "motor": 10,
+          "pump": 9,
+          "bearing": 7
+        },
+        "bearing": {
+          "valve": 9,
+          "bearing": 83,
+          "motor": 13,
+          "sensor": 8,
+          "pump": 7
+        }
+      },
+      "seed": 29,
+      "stage": "extract",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 39054,
+      "n_damaged": 777,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7266666666666667,
+      "macro_f1": 0.7267089683368826,
+      "recall": {
+        "pump": 0.7166666666666667,
+        "motor": 0.7666666666666667,
+        "valve": 0.725,
+        "sensor": 0.7333333333333333,
+        "bearing": 0.6916666666666667
+      },
+      "matrix": {
+        "pump": {
+          "bearing": 7,
+          "valve": 10,
+          "pump": 86,
+          "sensor": 10,
+          "motor": 7
+        },
+        "motor": {
+          "motor": 92,
+          "sensor": 6,
+          "bearing": 10,
+          "valve": 6,
+          "pump": 6
+        },
+        "valve": {
+          "valve": 87,
+          "sensor": 14,
+          "motor": 8,
+          "pump": 6,
+          "bearing": 5
+        },
+        "sensor": {
+          "sensor": 88,
+          "valve": 9,
+          "motor": 10,
+          "pump": 6,
+          "bearing": 7
+        },
+        "bearing": {
+          "valve": 9,
+          "bearing": 83,
+          "motor": 13,
+          "sensor": 8,
+          "pump": 7
+        }
+      },
+      "seed": 29,
+      "stage": "dedup",
+      "n_train": 2000,
+      "n_test": 600,
+      "n_tokens": 30858,
+      "n_damaged": 605,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7366666666666667,
+      "macro_f1": 0.736557131442378,
+      "recall": {
+        "pump": 0.7166666666666667,
+        "motor": 0.8083333333333333,
+        "valve": 0.7166666666666667,
+        "sensor": 0.7166666666666667,
+        "bearing": 0.725
+      },
+      "matrix": {
+        "pump": {
+          "bearing": 7,
+          "valve": 10,
+          "pump": 86,
+          "sensor": 10,
+          "motor": 7
+        },
+        "motor": {
+          "motor": 97,
+          "sensor": 6,
+          "bearing": 7,
+          "valve": 4,
+          "pump": 6
+        },
+        "valve": {
+          "valve": 86,
+          "sensor": 14,
+          "motor": 9,
+          "pump": 6,
+          "bearing": 5
+        },
+        "sensor": {
+          "sensor": 86,
+          "valve": 8,
+          "motor": 10,
+          "pump": 8,
+          "bearing": 8
+        },
+        "bearing": {
+          "valve": 9,
+          "bearing": 87,
+          "motor": 13,
+          "sensor": 7,
+          "pump": 4
+        }
+      },
+      "seed": 29,
+      "stage": "quality",
+      "n_train": 1395,
+      "n_test": 600,
+      "n_tokens": 21579,
+      "n_damaged": 0,
+      "n_families": 1395
+    },
+    {
+      "accuracy": 0.08,
+      "macro_f1": 0.0801432594187257,
+      "recall": {
+        "pump": 0.05,
+        "motor": 0.075,
+        "valve": 0.09166666666666666,
+        "sensor": 0.09166666666666666,
+        "bearing": 0.09166666666666666
+      },
+      "matrix": {
+        "pump": {
+          "bearing": 94,
+          "pump": 6,
+          "motor": 8,
+          "valve": 10,
+          "sensor": 2
+        },
+        "motor": {
+          "pump": 94,
+          "motor": 9,
+          "valve": 8,
+          "bearing": 1,
+          "sensor": 8
+        },
+        "valve": {
+          "motor": 87,
+          "valve": 11,
+          "pump": 6,
+          "sensor": 9,
+          "bearing": 7
+        },
+        "sensor": {
+          "sensor": 11,
+          "valve": 93,
+          "pump": 9,
+          "bearing": 5,
+          "motor": 2
+        },
+        "bearing": {
+          "sensor": 90,
+          "motor": 8,
+          "bearing": 11,
+          "pump": 11
+        }
+      },
+      "seed": 43,
+      "stage": "raw",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 141258,
+      "n_damaged": 769,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7583333333333333,
+      "macro_f1": 0.758337248932981,
+      "recall": {
+        "pump": 0.7666666666666667,
+        "motor": 0.775,
+        "valve": 0.7666666666666667,
+        "sensor": 0.7416666666666667,
+        "bearing": 0.7416666666666667
+      },
+      "matrix": {
+        "pump": {
+          "pump": 92,
+          "bearing": 9,
+          "motor": 4,
+          "valve": 6,
+          "sensor": 9
+        },
+        "motor": {
+          "motor": 93,
+          "valve": 7,
+          "sensor": 8,
+          "pump": 4,
+          "bearing": 8
+        },
+        "valve": {
+          "valve": 92,
+          "motor": 8,
+          "bearing": 7,
+          "pump": 9,
+          "sensor": 4
+        },
+        "sensor": {
+          "bearing": 7,
+          "sensor": 89,
+          "valve": 7,
+          "motor": 9,
+          "pump": 8
+        },
+        "bearing": {
+          "bearing": 89,
+          "sensor": 4,
+          "valve": 9,
+          "motor": 11,
+          "pump": 7
+        }
+      },
+      "seed": 43,
+      "stage": "extract",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 39818,
+      "n_damaged": 769,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7583333333333333,
+      "macro_f1": 0.7584003537369575,
+      "recall": {
+        "pump": 0.75,
+        "motor": 0.775,
+        "valve": 0.7666666666666667,
+        "sensor": 0.7583333333333333,
+        "bearing": 0.7416666666666667
+      },
+      "matrix": {
+        "pump": {
+          "pump": 90,
+          "bearing": 10,
+          "motor": 4,
+          "valve": 7,
+          "sensor": 9
+        },
+        "motor": {
+          "motor": 93,
+          "valve": 7,
+          "sensor": 8,
+          "pump": 4,
+          "bearing": 8
+        },
+        "valve": {
+          "valve": 92,
+          "motor": 8,
+          "bearing": 7,
+          "pump": 9,
+          "sensor": 4
+        },
+        "sensor": {
+          "bearing": 7,
+          "sensor": 91,
+          "valve": 7,
+          "motor": 9,
+          "pump": 6
+        },
+        "bearing": {
+          "bearing": 89,
+          "sensor": 4,
+          "valve": 9,
+          "motor": 11,
+          "pump": 7
+        }
+      },
+      "seed": 43,
+      "stage": "dedup",
+      "n_train": 2000,
+      "n_test": 600,
+      "n_tokens": 31278,
+      "n_damaged": 589,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7533333333333333,
+      "macro_f1": 0.7533528088777405,
+      "recall": {
+        "pump": 0.7666666666666667,
+        "motor": 0.7333333333333333,
+        "valve": 0.7583333333333333,
+        "sensor": 0.7666666666666667,
+        "bearing": 0.7416666666666667
+      },
+      "matrix": {
+        "pump": {
+          "pump": 92,
+          "bearing": 8,
+          "motor": 4,
+          "valve": 7,
+          "sensor": 9
+        },
+        "motor": {
+          "motor": 88,
+          "valve": 8,
+          "sensor": 12,
+          "pump": 4,
+          "bearing": 8
+        },
+        "valve": {
+          "valve": 91,
+          "sensor": 5,
+          "motor": 8,
+          "bearing": 7,
+          "pump": 9
+        },
+        "sensor": {
+          "bearing": 7,
+          "sensor": 92,
+          "valve": 7,
+          "motor": 9,
+          "pump": 5
+        },
+        "bearing": {
+          "bearing": 89,
+          "sensor": 3,
+          "valve": 9,
+          "motor": 11,
+          "pump": 8
+        }
+      },
+      "seed": 43,
+      "stage": "quality",
+      "n_train": 1411,
+      "n_test": 600,
+      "n_tokens": 21983,
+      "n_damaged": 0,
+      "n_families": 1411
+    },
+    {
+      "accuracy": 0.09166666666666666,
+      "macro_f1": 0.09158072357578971,
+      "recall": {
+        "pump": 0.08333333333333333,
+        "motor": 0.09166666666666666,
+        "valve": 0.13333333333333333,
+        "sensor": 0.06666666666666667,
+        "bearing": 0.08333333333333333
+      },
+      "matrix": {
+        "pump": {
+          "bearing": 89,
+          "motor": 15,
+          "pump": 10,
+          "sensor": 1,
+          "valve": 5
+        },
+        "motor": {
+          "sensor": 5,
+          "motor": 11,
+          "pump": 95,
+          "bearing": 4,
+          "valve": 5
+        },
+        "valve": {
+          "motor": 85,
+          "sensor": 6,
+          "valve": 16,
+          "bearing": 11,
+          "pump": 2
+        },
+        "sensor": {
+          "valve": 91,
+          "sensor": 8,
+          "pump": 9,
+          "motor": 4,
+          "bearing": 8
+        },
+        "bearing": {
+          "sensor": 87,
+          "pump": 8,
+          "motor": 14,
+          "bearing": 10,
+          "valve": 1
+        }
+      },
+      "seed": 71,
+      "stage": "raw",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 140881,
+      "n_damaged": 760,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.74,
+      "macro_f1": 0.7395561529388084,
+      "recall": {
+        "pump": 0.7666666666666667,
+        "motor": 0.8166666666666667,
+        "valve": 0.7166666666666667,
+        "sensor": 0.7333333333333333,
+        "bearing": 0.6666666666666666
+      },
+      "matrix": {
+        "pump": {
+          "pump": 92,
+          "valve": 13,
+          "motor": 8,
+          "bearing": 1,
+          "sensor": 6
+        },
+        "motor": {
+          "bearing": 7,
+          "valve": 5,
+          "motor": 98,
+          "pump": 6,
+          "sensor": 4
+        },
+        "valve": {
+          "valve": 86,
+          "bearing": 5,
+          "motor": 6,
+          "sensor": 12,
+          "pump": 11
+        },
+        "sensor": {
+          "sensor": 88,
+          "bearing": 8,
+          "motor": 10,
+          "valve": 7,
+          "pump": 7
+        },
+        "bearing": {
+          "bearing": 80,
+          "motor": 7,
+          "sensor": 8,
+          "valve": 15,
+          "pump": 10
+        }
+      },
+      "seed": 71,
+      "stage": "extract",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 39441,
+      "n_damaged": 760,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7316666666666667,
+      "macro_f1": 0.7312940390648279,
+      "recall": {
+        "pump": 0.725,
+        "motor": 0.8166666666666667,
+        "valve": 0.7166666666666667,
+        "sensor": 0.7333333333333333,
+        "bearing": 0.6666666666666666
+      },
+      "matrix": {
+        "pump": {
+          "pump": 87,
+          "bearing": 4,
+          "valve": 15,
+          "motor": 8,
+          "sensor": 6
+        },
+        "motor": {
+          "bearing": 7,
+          "valve": 5,
+          "motor": 98,
+          "pump": 6,
+          "sensor": 4
+        },
+        "valve": {
+          "valve": 86,
+          "bearing": 5,
+          "motor": 6,
+          "sensor": 12,
+          "pump": 11
+        },
+        "sensor": {
+          "sensor": 88,
+          "bearing": 8,
+          "motor": 10,
+          "valve": 7,
+          "pump": 7
+        },
+        "bearing": {
+          "bearing": 80,
+          "motor": 7,
+          "sensor": 8,
+          "valve": 15,
+          "pump": 10
+        }
+      },
+      "seed": 71,
+      "stage": "dedup",
+      "n_train": 2000,
+      "n_test": 600,
+      "n_tokens": 31369,
+      "n_damaged": 592,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.735,
+      "macro_f1": 0.7346444266235218,
+      "recall": {
+        "pump": 0.7166666666666667,
+        "motor": 0.8333333333333334,
+        "valve": 0.725,
+        "sensor": 0.7166666666666667,
+        "bearing": 0.6833333333333333
+      },
+      "matrix": {
+        "pump": {
+          "pump": 86,
+          "bearing": 5,
+          "valve": 15,
+          "motor": 8,
+          "sensor": 6
+        },
+        "motor": {
+          "bearing": 7,
+          "valve": 6,
+          "motor": 100,
+          "pump": 6,
+          "sensor": 1
+        },
+        "valve": {
+          "valve": 87,
+          "bearing": 4,
+          "motor": 6,
+          "sensor": 12,
+          "pump": 11
+        },
+        "sensor": {
+          "sensor": 86,
+          "bearing": 8,
+          "motor": 12,
+          "valve": 7,
+          "pump": 7
+        },
+        "bearing": {
+          "bearing": 82,
+          "motor": 7,
+          "sensor": 7,
+          "valve": 15,
+          "pump": 9
+        }
+      },
+      "seed": 71,
+      "stage": "quality",
+      "n_train": 1408,
+      "n_test": 600,
+      "n_tokens": 21990,
+      "n_damaged": 0,
+      "n_families": 1408
+    },
+    {
+      "accuracy": 0.08333333333333333,
+      "macro_f1": 0.08308219072656205,
+      "recall": {
+        "pump": 0.05,
+        "motor": 0.11666666666666667,
+        "valve": 0.09166666666666666,
+        "sensor": 0.1,
+        "bearing": 0.058333333333333334
+      },
+      "matrix": {
+        "pump": {
+          "bearing": 98,
+          "valve": 4,
+          "motor": 8,
+          "pump": 6,
+          "sensor": 4
+        },
+        "motor": {
+          "pump": 88,
+          "motor": 14,
+          "valve": 8,
+          "bearing": 3,
+          "sensor": 7
+        },
+        "valve": {
+          "motor": 90,
+          "valve": 11,
+          "bearing": 9,
+          "pump": 2,
+          "sensor": 8
+        },
+        "sensor": {
+          "valve": 92,
+          "motor": 3,
+          "bearing": 9,
+          "sensor": 12,
+          "pump": 4
+        },
+        "bearing": {
+          "sensor": 94,
+          "pump": 9,
+          "motor": 7,
+          "valve": 3,
+          "bearing": 7
+        }
+      },
+      "seed": 101,
+      "stage": "raw",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 141070,
+      "n_damaged": 780,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.74,
+      "macro_f1": 0.7394285789057031,
+      "recall": {
+        "pump": 0.8083333333333333,
+        "motor": 0.6666666666666666,
+        "valve": 0.7166666666666667,
+        "sensor": 0.75,
+        "bearing": 0.7583333333333333
+      },
+      "matrix": {
+        "pump": {
+          "pump": 97,
+          "bearing": 9,
+          "sensor": 4,
+          "valve": 8,
+          "motor": 2
+        },
+        "motor": {
+          "motor": 80,
+          "valve": 10,
+          "sensor": 9,
+          "pump": 14,
+          "bearing": 7
+        },
+        "valve": {
+          "valve": 86,
+          "sensor": 11,
+          "motor": 6,
+          "pump": 9,
+          "bearing": 8
+        },
+        "sensor": {
+          "sensor": 90,
+          "valve": 9,
+          "pump": 9,
+          "motor": 4,
+          "bearing": 8
+        },
+        "bearing": {
+          "bearing": 91,
+          "motor": 10,
+          "valve": 7,
+          "sensor": 6,
+          "pump": 6
+        }
+      },
+      "seed": 101,
+      "stage": "extract",
+      "n_train": 2536,
+      "n_test": 600,
+      "n_tokens": 39630,
+      "n_damaged": 780,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7416666666666667,
+      "macro_f1": 0.7410967226085962,
+      "recall": {
+        "pump": 0.8,
+        "motor": 0.6666666666666666,
+        "valve": 0.725,
+        "sensor": 0.75,
+        "bearing": 0.7666666666666667
+      },
+      "matrix": {
+        "pump": {
+          "pump": 96,
+          "bearing": 9,
+          "sensor": 4,
+          "valve": 8,
+          "motor": 3
+        },
+        "motor": {
+          "motor": 80,
+          "valve": 10,
+          "sensor": 9,
+          "pump": 14,
+          "bearing": 7
+        },
+        "valve": {
+          "valve": 87,
+          "sensor": 11,
+          "motor": 6,
+          "pump": 8,
+          "bearing": 8
+        },
+        "sensor": {
+          "sensor": 90,
+          "valve": 9,
+          "pump": 9,
+          "motor": 4,
+          "bearing": 8
+        },
+        "bearing": {
+          "bearing": 92,
+          "motor": 10,
+          "valve": 7,
+          "sensor": 6,
+          "pump": 5
+        }
+      },
+      "seed": 101,
+      "stage": "dedup",
+      "n_train": 2000,
+      "n_test": 600,
+      "n_tokens": 31242,
+      "n_damaged": 624,
+      "n_families": 2000
+    },
+    {
+      "accuracy": 0.7366666666666667,
+      "macro_f1": 0.735862949381103,
+      "recall": {
+        "pump": 0.8083333333333333,
+        "motor": 0.6416666666666667,
+        "valve": 0.7333333333333333,
+        "sensor": 0.7416666666666667,
+        "bearing": 0.7583333333333333
+      },
+      "matrix": {
+        "pump": {
+          "pump": 97,
+          "bearing": 8,
+          "sensor": 4,
+          "valve": 8,
+          "motor": 3
+        },
+        "motor": {
+          "motor": 77,
+          "valve": 13,
+          "sensor": 9,
+          "pump": 14,
+          "bearing": 7
+        },
+        "valve": {
+          "valve": 88,
+          "sensor": 11,
+          "pump": 9,
+          "motor": 4,
+          "bearing": 8
+        },
+        "sensor": {
+          "sensor": 89,
+          "valve": 9,
+          "pump": 9,
+          "motor": 4,
+          "bearing": 9
+        },
+        "bearing": {
+          "bearing": 91,
+          "motor": 10,
+          "valve": 7,
+          "sensor": 6,
+          "pump": 6
+        }
+      },
+      "seed": 101,
+      "stage": "quality",
+      "n_train": 1376,
+      "n_test": 600,
+      "n_tokens": 21457,
+      "n_damaged": 0,
+      "n_families": 1376
+    }
+  ],
+  "summary": [
+    {
+      "stage": "raw",
+      "mean_accuracy": 0.09033333333333333,
+      "sd_accuracy": 0.00853098926137982,
+      "mean_f1": 0.09027527082412777,
+      "mean_train": 2536,
+      "mean_tokens": 140943.8
+    },
+    {
+      "stage": "extract",
+      "mean_accuracy": 0.739,
+      "sd_accuracy": 0.012505554321536038,
+      "mean_f1": 0.7388182869217436,
+      "mean_train": 2536,
+      "mean_tokens": 39503.8
+    },
+    {
+      "stage": "dedup",
+      "mean_accuracy": 0.7373333333333334,
+      "sd_accuracy": 0.013102162671355673,
+      "mean_f1": 0.7372046442794772,
+      "mean_train": 2000,
+      "mean_tokens": 31181.4
+    },
+    {
+      "stage": "quality",
+      "mean_accuracy": 0.739,
+      "sd_accuracy": 0.008130873945100304,
+      "mean_f1": 0.7387696959938157,
+      "mean_train": 1399.2,
+      "mean_tokens": 21800.4
+    }
+  ],
+  "paired_first_seed": {
+    "raw_to_quality": [
+      0.5883333333333334,
+      0.685
+    ]
+  }
+}
