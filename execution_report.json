@@ -1,0 +1,56 @@
+[
+  {
+    "file": "release_store.py",
+    "returncode": 0,
+    "stdout": "release-store checks passed\n",
+    "stderr": ""
+  },
+  {
+    "file": "special_checks.py",
+    "returncode": 0,
+    "stdout": "special-data checks passed\n",
+    "stderr": ""
+  },
+  {
+    "file": "corpus_lab.py",
+    "returncode": 0,
+    "stdout": "[\n  {\n    \"stage\": \"raw\",\n    \"mean_accuracy\": 0.09033333333333333,\n    \"sd_accuracy\": 0.00853098926137982,\n    \"mean_f1\": 0.09027527082412777,\n    \"mean_train\": 2536,\n    \"mean_tokens\": 140943.8\n  },\n  {\n    \"stage\": \"extract\",\n    \"mean_accuracy\": 0.739,\n    \"sd_accuracy\": 0.012505554321536038,\n    \"mean_f1\": 0.7388182869217436,\n    \"mean_train\": 2536,\n    \"mean_tokens\": 39503.8\n  },\n  {\n    \"stage\": \"dedup\",\n    \"mean_accuracy\": 0.7373333333333334,\n    \"sd_accuracy\": 0.013102162671355673,\n    \"mean_f1\": 0.7372046442794772,\n    \"mean_train\": 2000,\n    \"mean_tokens\": 31181.4\n  },\n  {\n    \"stage\": \"quality\",\n    \"mean_accuracy\": 0.739,\n    \"sd_accuracy\": 0.008130873945100304,\n    \"mean_f1\": 0.7387696959938157,\n    \"mean_train\": 1399.2,\n    \"mean_tokens\": 21800.4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "file": "listing_4_1.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "file": "listing_4_2.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "file": "listing_5_1.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "file": "listing_5_2.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "file": "listing_6_1.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "file": "listing_7_1.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

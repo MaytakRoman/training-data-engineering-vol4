@@ -1,0 +1,18 @@
+{
+  "README.md": "f1cef45d93ebc67d9871e3310a59d10e191f60db95f7d3f9621135cce3ffa631",
+  "control_experiments.py": "a28f3246c12a6b3465b9ff31db1729c76f4f4a06665d5e8323561842740aae2b",
+  "control_results/report.json": "09b1ba2643d44a7204ba7ec4cf33e7b7832a413cd08a2ac31f7dc14f6aeaa2c6",
+  "corpus_lab.py": "1bc88ad4c02eb0cfee88acbab200252f948cc596fc09af8c054b1062706d73bf",
+  "execution_report.json": "f068bb2291c4444c0f2e167c641fb82032adc2766bc41a3bb2cbe2c2cdc35eda",
+  "lab_results/raw_train.jsonl": "caea298392aa611a744f004bf503fc70ad05d9fa4b539fe660e9521568809dfe",
+  "lab_results/report.json": "cd93da14cf85bc76bf1f90b5896e3c07045db3e72dcf689d3e861b8edef95633",
+  "lab_results/test.jsonl": "645787b65f377f6d7573c3455803f6942429a438337cf7330532359b38b8d985",
+  "listing_4_1.py": "11871f0df6e16e4ac04c9bb278f902b0cf529f2b3461db77e4bbd1199f5555bf",
+  "listing_4_2.py": "9ce20d8c6c5d3cabcfb7226a04ab561e27f5f685ff3310bf573cbcebe78b2e44",
+  "listing_5_1.py": "2ef3383c0864c6688f7d0f56c505b0ebc7a8dcd7b4bf99bace3d341086eef0c3",
+  "listing_5_2.py": "d9a8e8ec6ff174668f7e5d19ca838a0c0464ebc74934f4352b1ebc201c03d8ca",
+  "listing_6_1.py": "9a1cf1e7b311329fd7166a8144be6ca79679fc2d85fd5be3b126cb6b308d7893",
+  "listing_7_1.py": "5ad53770064f4740cbbefb9722c537688a681610fdfdd872fa67d77481f22a6f",
+  "release_store.py": "36380e72bf3f0f4245f11d68be2151b2b70a497ce556e95da98bc882864a1e4c",
+  "special_checks.py": "af7acb7f86602ab87b1bf51631db81acb04a208a0c177075dc4a9a0ae6d8c619"
+}
